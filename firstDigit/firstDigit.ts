@@ -1,5 +1,6 @@
 function firstDigit(inputString: string): string {
-
+  const numbers = inputString.match(/\d/g);
+  return numbers[numbers.length - 1];
 }
 
 console.log(firstDigit('var_1__Int'));
